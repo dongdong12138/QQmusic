@@ -6,6 +6,7 @@
   "scripts": {
     "build": "npx parcel build *.html --no-cache --out-dir build --public-url ./"
   },
+  "homepage" : "https://github.com/dongdong12138/QQmusic",
   "keywords": [],
   "author": "",
   "license": "ISC",
