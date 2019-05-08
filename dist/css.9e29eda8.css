@@ -1,0 +1,28 @@
+* {margin: 0; padding: 0;}
+* {box-sizing: border-box;}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+.header {
+  width: 100%;
+  height: 45px;
+  background: red;
+}
+.content {
+  width: 100%;
+  flex: 1;
+  background: blue;
+}
+.footer {
+  width: 100%;
+  height: 60px;
+  background: green;
+}
+
+/*# sourceMappingURL=/css.9e29eda8.css.map */
