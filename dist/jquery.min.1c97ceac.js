@@ -1458,7 +1458,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
       return S(e.firstChild);
     },
     contents: function contents(e) {
-      return "undefined" != typeof e.contentDocument ? e.contentDocument : (A(e, "template") && (e = e.content || e), k.merge([], e.childNodes));
+      return "undefined" != typeof e.contentDocument ? e.contentDocument : (A(e, "template") && (e = e.song || e), k.merge([], e.childNodes));
     }
   }, function (r, i) {
     k.fn[r] = function (e, t) {
@@ -2665,10 +2665,10 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     var a = "width" === t ? 1 : 0,
         s = 0,
         u = 0;
-    if (n === (r ? "border" : "content")) return 0;
+    if (n === (r ? "border" : "song")) return 0;
 
     for (; a < 4; a += 2) {
-      "margin" === n && (u += k.css(e, n + re[a], !0, i)), r ? ("content" === n && (u -= k.css(e, "padding" + re[a], !0, i)), "margin" !== n && (u -= k.css(e, "border" + re[a] + "Width", !0, i))) : (u += k.css(e, "padding" + re[a], !0, i), "padding" !== n ? u += k.css(e, "border" + re[a] + "Width", !0, i) : s += k.css(e, "border" + re[a] + "Width", !0, i));
+      "margin" === n && (u += k.css(e, n + re[a], !0, i)), r ? ("song" === n && (u -= k.css(e, "padding" + re[a], !0, i)), "margin" !== n && (u -= k.css(e, "border" + re[a] + "Width", !0, i))) : (u += k.css(e, "padding" + re[a], !0, i), "padding" !== n ? u += k.css(e, "border" + re[a] + "Width", !0, i) : s += k.css(e, "border" + re[a] + "Width", !0, i));
     }
 
     return !r && 0 <= o && (u += Math.max(0, Math.ceil(e["offset" + t[0].toUpperCase() + t.slice(1)] - o - u - s - .5)) || 0), u;
@@ -2686,7 +2686,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
       a = "auto";
     }
 
-    return (!y.boxSizingReliable() && i || "auto" === a || !parseFloat(a) && "inline" === k.css(e, "display", !1, r)) && e.getClientRects().length && (i = "border-box" === k.css(e, "boxSizing", !1, r), (o = s in e) && (a = e[s])), (a = parseFloat(a) || 0) + et(e, t, n || (i ? "border" : "content"), o, r, a) + "px";
+    return (!y.boxSizingReliable() && i || "auto" === a || !parseFloat(a) && "inline" === k.css(e, "display", !1, r)) && e.getClientRects().length && (i = "border-box" === k.css(e, "boxSizing", !1, r), (o = s in e) && (a = e[s])), (a = parseFloat(a) || 0) + et(e, t, n || (i ? "border" : "song"), o, r, a) + "px";
   }
 
   function nt(e, t, n, r, i) {
