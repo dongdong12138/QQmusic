@@ -132,6 +132,7 @@ body {
   display: flex;
   opacity: 0.5;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  user-select: none;
 }
 .song > .wrapper > .song-items > .song-list > ul li > div {
   line-height: 50px;
@@ -147,13 +148,48 @@ body {
   height: 14px;
   border: 1px solid #fff;
 }
+.song > .wrapper > .song-items > .song-list > ul li > .list-check > i.active {
+  background: url("/icon_sprite.4d22b02f.png") no-repeat -61px -81px;
+}
 .song > .wrapper > .song-items > .song-list > ul li > .list-number {
   width: 20px;
   height: 100%;
 }
 .song > .wrapper > .song-items > .song-list > ul li > .list-name {
+  border: 1px solid black;
+  justify-content: space-between;
+  display: flex;
+  padding: 0 30px;
   flex: 1;
   height: 100%;
+}
+.song > .wrapper > .song-items > .song-list > ul li > .list-name > .list-title {
+  margin-left: -10px;
+  border: 1px solid black;
+}
+.song > .wrapper > .song-items > .song-list > ul li > .list-name > .list-menu {
+  border: 1px solid black;
+  display: none;
+}
+.song > .wrapper > .song-items > .song-list > ul li > .list-name > .list-menu > a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin: 5px 4px;
+  background: url("/icon_list_menu.90caa691.png") no-repeat 0 0;
+}
+.song > .wrapper > .song-items > .song-list > ul li > .list-name > .list-menu > a:first-child {
+  background-position: -120px 0;
+}
+.song > .wrapper > .song-items > .song-list > ul li > .list-name > .list-menu > a:nth-child(2) {
+  background-position: -120px -80px;
+}
+.song > .wrapper > .song-items > .song-list > ul li > .list-name > .list-menu > a:nth-child(3) {
+  background-position: -120px -120px;
+}
+.song > .wrapper > .song-items > .song-list > ul li > .list-name > .list-menu > a:nth-child(4) {
+  background-position: -120px -40px;
 }
 .song > .wrapper > .song-items > .song-list > ul li > .list-singer {
   width: 20%;
@@ -161,7 +197,18 @@ body {
 }
 .song > .wrapper > .song-items > .song-list > ul li > .list-time {
   width: 170px;
+  display: flex;
+  align-items: center;
   height: 100%;
+}
+.song > .wrapper > .song-items > .song-list > ul li > .list-time > a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin: 0 40px;
+  background: url("/icon_list_menu.90caa691.png") no-repeat -120px -160px;
+  display: none;
 }
 .song > .wrapper > .song-details {
   height: 100%;
